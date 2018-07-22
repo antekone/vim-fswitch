@@ -341,7 +341,7 @@ augroup fswitch_au_group
     au BufEnter *.cxx  call s:SetVariables('hxx,h',   'reg:/src/include/,reg:|src|include/**|,ifrel:|/src/|../include|')
     au BufEnter *.C    call s:SetVariables('H',       'reg:/src/include/,reg:|src|include/**|,ifrel:|/src/|../include|')
     au BufEnter *.m    call s:SetVariables('h',       'reg:/src/include/,reg:|src|include/**|,ifrel:|/src/|../include|')
-    au BufEnter *.h    call s:SetVariables('c,cpp,c++,m', 'reg:/include/src/,reg:/include.*/src/,ifrel:|/include/|../src|')
+    au BufEnter *.h    call s:SetVariables('c,cpp,c++,cc,m', 'reg:/include/src/,reg:/include.*/src/,ifrel:|/include/|../src|')
     au BufEnter *.hh   call s:SetVariables('cc,cpp,c++', 'reg:/include/src/,reg:/include.*/src/,ifrel:|/include/|../src|')
     au BufEnter *.hpp  call s:SetVariables('cpp,c++', 'reg:/include/src/,reg:/include.*/src/,ifrel:|/include/|../src|')
     au BufEnter *.hxx  call s:SetVariables('cxx',     'reg:/include/src/,reg:/include.*/src/,ifrel:|/include/|../src|')
